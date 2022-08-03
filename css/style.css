@@ -392,6 +392,7 @@ input, button {
     display: block;
     width: 100%;
     margin-bottom: 2rem;
+    margin: 0 auto;
   }
   .more-intro-content {
     width: 90%;
