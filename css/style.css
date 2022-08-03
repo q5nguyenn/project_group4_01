@@ -391,11 +391,11 @@ input, button {
   .more-item {
     display: block;
     width: 100%;
-    margin-bottom: 2rem;
-    margin: 0 auto;
+    margin: 1rem auto;
   }
   .more-intro-content {
     width: 90%;
+    padding: 3rem 0 3rem;
   }
   .more-item-title {
     padding: 1rem 0;
