@@ -12,11 +12,17 @@ body {
   min-height: 100vh;
   font-size: 1.6rem;
   padding-top: 6rem;
+  position: relative;
 }
 
 a {
   text-decoration: none;
   color: #171A20;
+  transition: 0.25s;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .wrapper {
@@ -51,25 +57,32 @@ input, button {
   box-shadow: none;
 }
 
-.active {
+.in-active {
   position: relative;
 }
-.active::after {
+.in-active::after {
   content: "";
-  width: 60%;
-  height: 2px;
-  background-color: #171A20;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  border-radius: 1.5rem;
+  z-index: -1;
+  /*width: 60%;*/
+  /*height: 2px;*/
+  /*background-color: #171A20;*/
+  /*position: absolute;*/
+  /*left: 50%;*/
+  /*transform: translateX(-50%);*/
+  /*bottom: 0;*/
 }
 
 .menu-list {
   display: flex;
   justify-content: center;
 }
-
 .header:hover + .model .model-shadow {
   visibility: visible;
   opacity: 1;
@@ -117,11 +130,16 @@ input, button {
   height: 100vh;
   width: 100%;
   cursor: pointer;
+  overflow: hidden;
 }
-.model-item:hover .model-shadow {
+.model-item:hover .model-shadow{
   visibility: visible;
   opacity: 1;
   transition: all 0.5s ease;
+}
+.model-item:hover img{
+  transition: all 0.5s ease;
+  transform: scale(1.05);
 }
 .model-item-image {
   width: 100%;
@@ -145,10 +163,14 @@ input, button {
   justify-content: space-between;
 }
 .model-shadow-title {
+  display: inline-block;
   font-size: 3.6rem;
   font-weight: bold;
   padding-top: 10rem;
   padding-bottom: 2rem;
+}
+.model-shadow-title:hover {
+  color: rgba(59, 62, 66, 0.5);
 }
 .model-shadow-desc a {
   text-decoration: none;
@@ -232,7 +254,7 @@ input, button {
   display: inline-block;
   margin: 0 auto;
   width: 65%;
-  padding: 1.5rem 0rem;
+  padding: 1.5rem 0;
   background-color: #F4F4F4;
   border-radius: 5rem;
   transition: 0.25s linear;
@@ -275,7 +297,6 @@ input, button {
   text-align: left;
 }
 .login-form label {
-  display: block;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -349,7 +370,15 @@ input, button {
   height: 2px;
   background-color: #E2E4E4;
 }
+.header-right {
+  position: relative;
+}
+.header-right-lang {
+  position: absolute;
+  color: red;
+}
 
+/*Responsive q5*/
 @media screen and (max-width: 1279px) {
   .more-item-link {
     width: 80%;
@@ -411,4 +440,22 @@ input, button {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+
+/* Edit bootstrap q5*/
+.menu-list .menu-item a.active {
+  background-color: #ccc;
+  border-radius: 1.5rem;
+}
+.header-center .menu-list .menu-item a.nav-link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  color: #171A20;
+}
+.menu-item-small {
+  font-size: 1.3rem;
+}
+.header-right .menu-list{
+  margin-bottom: 0;
+}

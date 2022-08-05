@@ -36,7 +36,7 @@
           <img src="images/logo_alone.png" alt="" class="header-logo-alone" />
         </a>
       </div>
-      <div class="header-right">
+      <div class="header-right" >
         <ul class="menu-list top">
           <li class="menu-item top li">
             <a href="#" class="flex"
@@ -44,16 +44,17 @@
             >
           </li>
         </ul>
+
       </div>
     </div>
     <div class="login">
       <div class="login-title model-shadow-title">Sign In</div>
       <div class="login-form">
         <label for="email"
-          >Email Address <span class="material-symbols-outlined"> error </span></label
+          >Email Address <span class="material-symbols-outlined error"> error </span><span id="warning" class="error"></span></label
         >
         <input type="email" name="email" id="email" />
-        <input type="button" value="NEXT" />
+        <input type="button" value="NEXT" id="next"/>
         <div class="login-forgot">
           <a href="#" class="login-forgot-link">Forgot Email?</a> |
           <a href="#" class="login-forgot-link">Forgot password?</a>
