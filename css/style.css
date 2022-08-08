@@ -214,6 +214,19 @@ input, button {
 .model-shadow-icon:hover, .model span:hover {
   color: rgba(59, 62, 66, 0.8);
 }
+.model-media {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  padding: 1rem;
+}
+.model-media span{
+  color: white;
+}
 
 .more {
   margin: 0 auto;
@@ -369,6 +382,9 @@ input, button {
   width: 40%;
   height: 2px;
   background-color: #E2E4E4;
+}
+.login .err span {
+  color: red;
 }
 .header-right {
   position: relative;

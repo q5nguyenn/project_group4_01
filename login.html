@@ -47,22 +47,24 @@
 
       </div>
     </div>
-    <div class="login">
-      <div class="login-title model-shadow-title">Sign In</div>
-      <div class="login-form">
-        <label for="email"
-          >Email Address <span class="material-symbols-outlined error"> error </span><span id="warning" class="error"></span></label
-        >
-        <input type="email" name="email" id="email" />
-        <input type="button" value="NEXT" id="next"/>
-        <div class="login-forgot">
-          <a href="#" class="login-forgot-link">Forgot Email?</a> |
-          <a href="#" class="login-forgot-link">Forgot password?</a>
+    <form action="#">
+      <div class="login">
+        <div class="login-title model-shadow-title">Sign In</div>
+        <div class="login-form">
+          <label for="email"
+          ><div>Email Address</div><span class="material-symbols-outlined"> error </span><span id="warning"></span></label
+          >
+          <input type="email" name="email" id="email" />
+          <input type="submit" value="NEXT" id="next"/>
+          <div class="login-forgot">
+            <a href="#" class="login-forgot-link">Forgot Email?</a> |
+            <a href="#" class="login-forgot-link">Forgot password?</a>
+          </div>
+          <div class="login-or">OR</div>
+          <input type="button" value="CREATE ACCOUNT" />
         </div>
-        <div class="login-or">OR</div>
-        <input type="submit" value="CREATE ACCOUNT" />
       </div>
-    </div>
+    </form>
     <div class="footer white">
       <ul class="menu-list">
         <li class="menu-item menu-item-small">

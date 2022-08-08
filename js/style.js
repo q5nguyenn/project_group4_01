@@ -57,20 +57,41 @@ function isEmail(emailStr)
 
 
 // Lấy dữ liệu từ input và check
-    let email = document.getElementById('email').value;
-    if (isEmail(email)){
-
-    }
-    document.getElementById('next').onclick = function () {
-        let email = document.getElementById('email').value;
-        let warning = document.getElementById('warning');
-        let error = document.getElementsByClassName('error')
-        if (isEmail(email)){
-            warning.textContent = 'Email hợp lệ';
+    function showErr(){
+        let email = document.getElementById('email');
+        let textErr = document.getElementById('warning');
+        if (!isEmail(email.value)) {
+            email.parentElement.classList.add('err')
+            textErr.innerText = 'Email không hợp lệ!!!'
         } else {
-            warning.textContent = 'Email không hợp lệ';
-            // warning.style.color = 'red';
-            error[0].style.color = 'red';
-            error[1].style.color = 'red';
+            email.parentElement.classList.remove('err');
         }
     }
+
+    document.getElementById('next').onclick = function () {
+        showErr();
+    }
+
+// Làm Media home
+    let image = document.getElementById('media-images');
+    let previous = document.getElementById('previous');
+    let next = document.getElementById('next');
+    let index = 1;
+    next.addEventListener('click', function () {
+        if(index == 5) {
+            index = 1;
+            image.src = `images/home${index}.jpg`
+        } else {
+            index++;
+            image.src = `images/home${index}.jpg`
+        }
+    })
+    previous.addEventListener('click', function () {
+        if(index == 1) {
+            index = 5;
+            image.src = `images/home${index}.jpg`
+        } else {
+            index--;
+            image.src = `images/home${index}.jpg`
+        }
+    })
