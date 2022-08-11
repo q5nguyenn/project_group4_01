@@ -61,7 +61,7 @@ function isEmail(emailStr)
         let email = document.getElementById('email');
         let textErr = document.getElementById('warning');
         if (!isEmail(email.value)) {
-            email.parentElement.classList.add('err')
+            email.parentElement.classList.toggle('err')
             textErr.innerText = 'Email không hợp lệ!!!'
         } else {
             email.parentElement.classList.remove('err');
