@@ -124,7 +124,6 @@ input, button {
   display: inline-block;
   padding-right: 0.5rem;
 }
-
 .model-item {
   position: relative;
   height: 100vh;
@@ -393,7 +392,66 @@ input, button {
   position: absolute;
   color: red;
 }
+/*Mobile*/
+.mobile-container {
+  width: 0;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  opacity: 0;
+  height: 100vh;
+  padding: 2rem;
+  z-index: -10;
+  transition: all 0.5s ease-in-out;
+  background-color: #fff;
+}
+.mobile-container a{
+  display: block;
+  padding: 1rem;
+  font-size: 2rem !important;
+}
 
+.mobile-container a:hover{
+  background-color: #ccc;
+  border-radius: 1.5rem;
+  color: white;
+}
+.mobile-container a:not(:first-child){
+  padding-left: 2rem;
+}
+.mobile-container a:last-child{
+  padding-left: 1rem;
+  color: red;
+  font-weight: bold;
+}
+.mobile-container a:first-child{
+  font-weight: bold;
+}
+.header-right span{
+  padding: 5px;
+  font-size: 3rem;
+}
+.header-right span:hover{
+  background-color: #ccc;
+  border-radius: 5px;
+  color: white;
+}
+.show {
+  width: 80%;
+  /*visibility: visible;*/
+  opacity: 1;
+  z-index: 999;
+}
+
+
+
+
+
+
+
+.header-mobile  {
+  display: none;
+}
 /*Responsive q5*/
 @media screen and (max-width: 1279px) {
   .more-item-link {
@@ -427,9 +485,15 @@ input, button {
   }
 }
 @media screen and (max-width: 767px) {
-  .header-center {
+  .header {
     display: none;
   }
+  .header-mobile  {
+    display: flex;
+  }
+  /*.header-center {*/
+  /*  display: none;*/
+  /*}*/
   .more {
     padding: 4rem 2rem 0;
   }
