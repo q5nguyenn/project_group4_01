@@ -226,7 +226,6 @@ input, button {
 .model-media span{
   color: white;
 }
-
 .more {
   margin: 0 auto;
   padding: 8rem 15rem;
@@ -382,6 +381,9 @@ input, button {
   height: 2px;
   background-color: #E2E4E4;
 }
+.material-symbols-outlined:hover {
+  color: black !important;
+}
 .login .err span {
   color: red;
 }
@@ -443,11 +445,9 @@ input, button {
   z-index: 999;
 }
 
-
-
-
-
-
+.tcl-image img{
+  width: 100%;
+}
 
 .header-mobile  {
   display: none;

@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins';font-size: 16px;
+}
+:root {
+    --text-color: #171A20;
+}
+.flex {
+    display: flex;
+}
+li {
+    list-style: none;
+}
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+h2 {
+    font-size: 36px;
+}
+
+/* HEADER  */
+.hd {
+    width: 100%;
+    line-height: 60px;
+    padding: 0px 30px ;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.hd-menu {
+    
+}
+.hd-menu ul {
+    justify-content: center;
+}
+.hd-menu ul li a {
+    padding: 0 20px;
+    line-height: 32px;
+    font-weight: bold;
+    border-radius: 0px;
+    transition: all 0.25s ease-in;
+}
+.hd-menu ul li a:hover {
+    background-color: rgb(204, 204, 204);
+    border-radius: 15px;
+}
+.hd-links {
+
+}
+.hd-links ul {
+    justify-content: flex-end;
+}
+.hd-links ul li a {
+    padding: 0 20px;
+    line-height: 32px;
+    font-weight: bold;
+    border-radius: 15px ;
+    transition: all 0.25s ease-in;
+}
+.hd-links ul li a:hover {
+    background-color: rgb(204, 204, 204);
+    border-radius: 15px;
+}
+
+/* MAIN  */
+.main {
+
+}
+/* MAIN-MODEL */
+.model
+.model-item {
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+.model-item:hover .model-item-img img {
+    transform: scale(1.05);
+}
+.model-item-img {
+    height: 100vh;
+    overflow: hidden ;
+}
+.model-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.25s ease-in;
+}
+.model-item-content {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.model-item-content p {
+    line-height: 46px;
+}
+.model-item-content p a {
+    text-decoration: underline;
+}
+.model-item-content p a:hover {
+    color: rgb(29, 131, 165);
+}
+.model-item-content__btn {
+    margin-top: 60vh;
+}
+.model-item-content__btn button {
+    border-radius: 50px;
+    text-transform: uppercase;
+    border: none;
+    background-color: rgba(59, 62, 66, 0.5);
+    transition: all 0.25s ease-in;
+    color: rgb(204, 204, 204);
+}
+.model-item-content__btn button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #171A20;
+}
+.model-item-content__btn button a {
+    padding: 0px 80px;
+    line-height: 47px;
+}
+.model-item__next {
+    cursor: pointer;
+    position: absolute;
+    bottom: -130px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: none;
+}
+.model-item__next i {
+    font-size: 30px;
+    color: #fff;
+}
+.in-active {
+  position: relative;
+}
+.in-active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  border-radius: 1.5rem;
+  z-index: -1;
+  /*width: 60%;*/
+  /*height: 2px;*/
+  /*background-color: #171A20;*/
+  /*position: absolute;*/
+  /*left: 50%;*/
+  /*transform: translateX(-50%);*/
+  /*bottom: 0;*/
+}
