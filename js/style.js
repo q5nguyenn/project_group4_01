@@ -61,7 +61,7 @@ function isEmail(emailStr)
         let email = document.getElementById('email');
         let textErr = document.getElementById('warning');
         if (!isEmail(email.value)) {
-            email.parentElement.classList.toggle('err')
+            email.parentElement.classList.add('err')
             textErr.innerText = 'Email không hợp lệ!!!'
         } else {
             email.parentElement.classList.remove('err');
@@ -114,5 +114,5 @@ menuMobile.onclick = function (e) {
 };
 btnMobile.onclick = function (e){
     e.stopPropagation();
-    menuMobile.classList.add('show');
+    menuMobile.classList.toggle('show');
 };

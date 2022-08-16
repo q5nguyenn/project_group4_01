@@ -465,7 +465,7 @@ input, button {
   .header-logo {
     display: none;
   }
-  a {
+  a:not(.model-shadow-title){
     font-size: 1.3rem !important;
   }
   .menu-item-small a {
@@ -487,6 +487,9 @@ input, button {
 @media screen and (max-width: 767px) {
   .header {
     display: none;
+  }
+  .no-shadow {
+    display: flex;
   }
   .header-mobile  {
     display: flex;

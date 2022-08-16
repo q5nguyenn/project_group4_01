@@ -1,266 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Electric Cars, Solar & Clean Energy | Tesla</title>
     <link rel="icon" type="image/x-icon" href="images/icon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@700&display=swap" rel="stylesheet" />
+</head>
 
-  </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="boxbox">
-      <!-- Phần header -->
-      <div class="header">
-        <div class="header-left">
-          <a href="index.html">
-            <img src="images/logo.png" alt="" class="header-logo" />
-            <img src="images/logo_alone.png" alt="" class="header-logo-alone" />
-          </a>
+        <!-- Phần header -->
+        <div class="header">
+            <div class="header-left">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="" class="header-logo" />
+                    <img src="images/logo_alone.png" alt="" class="header-logo-alone" />
+                </a>
+            </div>
+            <div class="header-center navbar navbar-expand-sm">
+                <ul class="menu-list navbar-nav">
+                    <li class="menu-item top">
+                        <a href="#section1" class="nav-link">Model S</a>
+                    </li>
+                    <li class="menu-item top">
+                        <a href="#section2" class="nav-link">Model X</a>
+                    </li>
+                    <li class="menu-item top">
+                        <a href="#section3" class="nav-link">Model Y</a>
+                    </li>
+                    <li class="menu-item top">
+                        <a href="#section4" class="nav-link">Model 3</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <ul class="menu-list top">
+                    <li class="menu-item top">
+                        <a href="shop.html">Shop</a>
+                    </li>
+                    <li class="menu-item top">
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li class="menu-item top">
+                        <a href="login.html">Account</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="header-center navbar navbar-expand-sm">
-          <ul class="menu-list navbar-nav">
-            <li class="menu-item top">
-              <a href="#section1" class="nav-link">Model S</a>
-            </li>
-            <li class="menu-item top">
-              <a href="#section2" class="nav-link">Model X</a>
-            </li>
-            <li class="menu-item top">
-              <a href="#section3" class="nav-link">Model Y</a>
-            </li>
-            <li class="menu-item top">
-              <a href="#section4" class="nav-link">Model 3</a>
-            </li>
-          </ul>
+        <!--    Header for Mobile-->
+        <div class="header header-mobile">
+            <div class="header-left">
+                <a href="index.html">
+                    <img src="images/logo_alone.png" alt="" />
+                </a>
+            </div>
+            <div class="header-right header-right-mobile">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </div>
         </div>
-        <div class="header-right">
-          <ul class="menu-list top">
-            <li class="menu-item top">
-              <a href="shop.html">Shop</a>
-            </li>
-            <li class="menu-item top">
-              <a href="login.html">Login</a>
-            </li>
-            <li class="menu-item top">
-              <a href="login.html">Account</a>
-            </li>
-          </ul>
+        <!--    Canvas Mobile-->
+        <div class="mobile-container">
+            <a href="index.html">Home</a>
+            <a href="modelS.html">Models</a>
+            <a href="modelX.html">ModelX</a>
+            <a href="modelY.html">ModelY</a>
+            <a href="model3.html">Model3</a>
+            <a href="shop.html">Shop</a>
+            <a href="login.html">Login</a>
+            <a href="login.html">Account</a>
+            <a href="#">X Close</a>
         </div>
-      </div>
-      <!--    Header for Mobile-->
-      <div class="header header-mobile">
-        <div class="header-left">
-          <a href="index.html">
-            <img src="images/logo_alone.png" alt=""/>
-          </a>
+        <!--Phần các sản phẩm-->
+        <div class="model">
+            <div class="model-item" id="section1">
+                <img src="images/models.jpg" alt="" class="model-item-image" />
+                <div class="model-shadow">
+                    <div class="model-shadow-name">
+                        <a class="model-shadow-title" href="modelS.html">Model S</a>
+                        <div class="model-shadow-desc">Order Online for <a href="#">Touchless Delivery</a></div>
+                    </div>
+                    <div class="model-shadow-link">
+                        <div class="model-shadow-bottom">
+                            <a href="shop.html" class="model-shadow-item is-active">Custom order</a>
+                            <a href="shop.html" class="model-shadow-item">Existing inventtory</a>
+                        </div>
+                        <a href="#section2"><span class="material-symbols-outlined model-shadow-icon"> expand_more </span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="model-item" id="section2">
+                <img src="images/modelx.jpg" alt="" class="model-item-image" />
+                <div class="model-shadow">
+                    <div class="model-shadow-name">
+                        <a class="model-shadow-title" href="modelX.html">Model X</a>
+                        <div class="model-shadow-desc">Order Online for <a href="#">Touchless Delivery</a></div>
+                    </div>
+                    <div class="model-shadow-link">
+                        <div class="model-shadow-bottom">
+                            <a href="shop.html" class="model-shadow-item is-active">Custom order</a>
+                            <a href="shop.html" class="model-shadow-item">Existing inventtory</a>
+                        </div>
+                        <a href="#section3"><span class="material-symbols-outlined model-shadow-icon"> expand_more </span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="model-item" id="section3">
+                <img src="images/modely.jpg" alt="" class="model-item-image" />
+                <div class="model-shadow">
+                    <div class="model-shadow-name">
+                        <a class="model-shadow-title" href="modelY.html">Model Y</a>
+                        <div class="model-shadow-desc">Order Online for <a href="#">Touchless Delivery</a></div>
+                    </div>
+                    <div class="model-shadow-link">
+                        <div class="model-shadow-bottom">
+                            <a href="shop.html" class="model-shadow-item is-active">Custom order</a>
+                            <a href="shop.html" class="model-shadow-item">Existing inventtory</a>
+                        </div>
+                        <a href="#section4"><span class="material-symbols-outlined model-shadow-icon"> expand_more </span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="model-item" id="section4">
+                <img src="images/model3.jpg" alt="" class="model-item-image" />
+                <div class="model-shadow">
+                    <div class="model-shadow-name">
+                        <a class="model-shadow-title" href="model3.html">Model 3</a>
+                        <div class="model-shadow-desc">Order Online for <a href="#">Touchless Delivery</a></div>
+                    </div>
+                    <div class="model-shadow-link">
+                        <div class="model-shadow-bottom">
+                            <a href="shop.html" class="model-shadow-item is-active">Custom order</a>
+                            <a href="shop.html" class="model-shadow-item">Existing inventtory</a>
+                        </div>
+                        <a href="#section5"><span class="material-symbols-outlined model-shadow-icon"> expand_more </span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="model-item" id="section5">
+                <img src="images/home1.jpg" alt="" class="model-item-image" id="media-images" />
+                <div class="model-shadow">
+                    <div class="model-shadow-name">
+                        <a class="model-shadow-title">Solar Roof</a>
+                        <div class="model-shadow-desc">Produce Clean Energy From Your Roof</div>
+                    </div>
+                    <div class="model-shadow-link">
+                        <div class="model-shadow-bottom">
+                            <a href="shop.html" class="model-shadow-item is-active">Custom order</a>
+                            <a href="shop.html" class="model-shadow-item">Existing inventtory</a>
+                        </div>
+                        <!--            <a href="#section6"-->
+                        <!--              ><span class="material-symbols-outlined model-shadow-icon"> expand_more </span></a-->
+                        <!--            >-->
+                        <div class="model-media">
+                            <span class="material-symbols-outlined" id="previous">arrow_back_ios</span>
+                            <span class="material-symbols-outlined" id="next">arrow_forward_ios</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="header-right header-right-mobile">
-        <span class="material-symbols-outlined">
-menu
-</span>
+        <!--Phần thêm-->
+        <div class="more" id="section6">
+            <div class="more-intro">
+                <h3 class="more-intro-title">Our Impact
+                </h3>
+                <div class="more-intro-content">Our mission is to accelerate the world’s transition to sustainable energy. In pursuit of this goal, we build products that replace some of the planet’s biggest polluters—while trying to do the right thing along the way.</div>
+            </div>
+            <div class="more-container">
+                <div class="more-item">
+                    <img src="images/more1.jpg" alt="" class="more-img">
+                    <div class="more-item-title">People and Culture
+                    </div>
+                    <a href="#" class="more-item-link">LEARN MORE</a>
+                </div>
+                <div class="more-item">
+                    <img src="images/more2.jpg" alt="" class="more-img">
+                    <div class="more-item-title">Environmental Impact
+                    </div>
+                    <a href="#" class="more-item-link">LEARN MORE</a>
+                </div>
+                <div class="more-item">
+                    <img src="images/more3.jpg" alt="" class="more-img">
+                    <div class="more-item-title">Supply Chain
+                    </div>
+                    <a href="#" class="more-item-link">LEARN MORE</a>
+                </div>
+                <div class="more-item">
+                    <img src="images/more4.jpg" alt="" class="more-img">
+                    <div class="more-item-title">Product Impact
+                    </div>
+                    <a href="#" class="more-item-link">LEARN MORE</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <!--    Canvas Mobile-->
-      <div class="mobile-container">
-        <a href="index.html">Home</a>
-        <a href="modelS.html">Models</a>
-        <a href="modelX.html">ModelX</a>
-        <a href="modelY.html">ModelY</a>
-        <a href="model3.html">Model3</a>
-        <a href="shop.html">Shop</a>
-        <a href="login.html">Login</a>
-        <a href="login.html">Account</a>
-        <a href="#">X Close</a>
-      </div>
+        <!--Phần footer-->
+        <div class="footer">
+            <ul class="menu-list">
+                <li class="menu-item menu-item-small">
+                    <a href="#">Tesla © 2022</a>
+                </li>
+                <li class="menu-item menu-item-small">
+                    <a href="#">Privacy & Legal</a>
+                </li>
+                <li class="menu-item menu-item-small">
+                    <a href="#">Vehicle Recalls</a>
+                </li>
+                <li class="menu-item menu-item-small">
+                    <a href="#">Contact</a>
+                </li>
+                <li class="menu-item menu-item-small">
+                    <a href="#">
+                        Careers</a>
+                </li>
+                <li class="menu-item menu-item-small">
+                    <a href="#">News</a>
+                </li>
+                <li class="menu-item menu-item-small">
+                    <a href="#">Engage</a>
+                </li>
+                <li class="menu-item menu-item-small">
+                    <a href="#">
+                        Locations</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <script src="js/style.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-      <!--Phần các sản phẩm-->
-      <div class="model">
-        <div class="model-item" id="section1">
-          <img src="images/models.jpg" alt="" class="model-item-image" />
-          <div class="model-shadow">
-            <div class="model-shadow-name">
-              <a class="model-shadow-title" href="modelS.html">Model S</a>
-              <div class="model-shadow-desc">Order Online for <a href="#">Touchless Delivery</a></div>
-            </div>
-            <div class="model-shadow-link">
-              <div class="model-shadow-bottom">
-                <a href="shop.html" class="model-shadow-item is-active">Custom order</a>
-                <a href="shop.html" class="model-shadow-item">Existing inventtory</a>
-              </div>
-              <a href="#section2"
-              ><span class="material-symbols-outlined model-shadow-icon"> expand_more </span></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="model-item" id="section2">
-          <img src="images/modelx.jpg" alt="" class="model-item-image" />
-          <div class="model-shadow">
-            <div class="model-shadow-name">
-              <a class="model-shadow-title" href="modelX.html">Model X</a>
-              <div class="model-shadow-desc">Order Online for <a href="#">Touchless Delivery</a></div>
-            </div>
-            <div class="model-shadow-link">
-              <div class="model-shadow-bottom">
-                <a href="shop.html" class="model-shadow-item is-active">Custom order</a>
-                <a href="shop.html" class="model-shadow-item">Existing inventtory</a>
-              </div>
-              <a href="#section3"
-              ><span class="material-symbols-outlined model-shadow-icon"> expand_more </span></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="model-item" id="section3">
-          <img src="images/modely.jpg" alt="" class="model-item-image" />
-          <div class="model-shadow">
-            <div class="model-shadow-name">
-              <a class="model-shadow-title" href="modelY.html">Model Y</a>
-              <div class="model-shadow-desc">Order Online for <a href="#">Touchless Delivery</a></div>
-            </div>
-            <div class="model-shadow-link">
-              <div class="model-shadow-bottom">
-                <a href="shop.html" class="model-shadow-item is-active">Custom order</a>
-                <a href="shop.html" class="model-shadow-item">Existing inventtory</a>
-              </div>
-              <a href="#section4"
-              ><span class="material-symbols-outlined model-shadow-icon"> expand_more </span></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="model-item" id="section4">
-          <img src="images/model3.jpg" alt="" class="model-item-image" />
-          <div class="model-shadow">
-            <div class="model-shadow-name">
-              <a class="model-shadow-title" href="model3.html">Model 3</a>
-              <div class="model-shadow-desc">Order Online for <a href="#">Touchless Delivery</a></div>
-            </div>
-            <div class="model-shadow-link">
-              <div class="model-shadow-bottom">
-                <a href="shop.html" class="model-shadow-item is-active">Custom order</a>
-                <a href="shop.html" class="model-shadow-item">Existing inventtory</a>
-              </div>
-              <a href="#section5"
-              ><span class="material-symbols-outlined model-shadow-icon"> expand_more </span></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="model-item" id="section5">
-          <img src="images/home1.jpg" alt="" class="model-item-image" id="media-images"/>
-          <div class="model-shadow">
-            <div class="model-shadow-name">
-              <a class="model-shadow-title">Solar Roof</a>
-              <div class="model-shadow-desc">Produce Clean Energy From Your Roof</div>
-            </div>
-            <div class="model-shadow-link">
-              <div class="model-shadow-bottom">
-                <a href="shop.html" class="model-shadow-item is-active">Custom order</a>
-                <a href="shop.html" class="model-shadow-item">Existing inventtory</a>
-              </div>
-              <!--            <a href="#section6"-->
-              <!--              ><span class="material-symbols-outlined model-shadow-icon"> expand_more </span></a-->
-              <!--            >-->
-              <div class="model-media">
-                <span class="material-symbols-outlined" id="previous">arrow_back_ios</span>
-                <span class="material-symbols-outlined" id="next">arrow_forward_ios</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Phần thêm-->
-      <div class="more" id="section6">
-        <div class="more-intro">
-          <h3 class="more-intro-title">Our Impact
-          </h3>
-          <div class="more-intro-content">Our mission is to accelerate the world’s transition to sustainable energy. In pursuit of this goal, we build products that replace some of the planet’s biggest polluters—while trying to do the right thing along the way.</div>
-        </div>
-        <div class="more-container">
-          <div class="more-item">
-            <img src="images/more1.jpg" alt="" class="more-img">
-            <div class="more-item-title">People and Culture
-            </div>
-            <a href="#" class="more-item-link">LEARN MORE</a>
-          </div>
-          <div class="more-item">
-            <img src="images/more2.jpg" alt="" class="more-img">
-            <div class="more-item-title">Environmental Impact
-            </div>
-            <a href="#" class="more-item-link">LEARN MORE</a>
-          </div>
-          <div class="more-item">
-            <img src="images/more3.jpg" alt="" class="more-img">
-            <div class="more-item-title">Supply Chain
-            </div>
-            <a href="#" class="more-item-link">LEARN MORE</a>
-          </div>
-          <div class="more-item">
-            <img src="images/more4.jpg" alt="" class="more-img">
-            <div class="more-item-title">Product Impact
-            </div>
-            <a href="#" class="more-item-link">LEARN MORE</a>
-          </div>
-        </div>
-      </div>
-      <!--Phần footer-->
-      <div class="footer">
-        <ul class="menu-list">
-          <li class="menu-item menu-item-small">
-            <a href="#">Tesla © 2022</a>
-          </li>
-          <li class="menu-item menu-item-small">
-            <a href="#">Privacy & Legal</a>
-          </li>
-          <li class="menu-item menu-item-small">
-            <a href="#">Vehicle Recalls</a>
-          </li>
-          <li class="menu-item menu-item-small">
-            <a href="#">Contact</a>
-          </li>
-          <li class="menu-item menu-item-small">
-            <a href="#">
-              Careers</a>
-          </li>
-          <li class="menu-item menu-item-small">
-            <a href="#">News</a>
-          </li>
-          <li class="menu-item menu-item-small">
-            <a href="#">Engage</a>
-          </li>
-          <li class="menu-item menu-item-small">
-            <a href="#">
-              Locations</a>
-          </li>
-        </ul>
-      </div>
-    <script src="js/style.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
 </html>
